@@ -1,0 +1,835 @@
+@font-face {
+  font-family: "LiAdor";
+  src: url('../public/assets/fonts/LiAdorNoirritMultiweight/Unicode/Li\ Ador\ Noirrit\ Regular.ttf') format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container ol,
+.container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container a,
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6,
+.container p,
+.container span {
+  margin: 0;
+  padding: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  box-shadow: none;
+  outline: unset;
+}
+
+body {
+  font-family: "LiAdor" !important;
+  background: #E5E5E5 !important;
+}
+
+
+
+/* =============== COMMON CSS FOR WEB SITE =============== */
+:root {
+  --bg_color: #DE5478;
+  --bg_color2: #FFDBE4;
+  --bg_color3: #EB5757;
+  --text_color: #332729;
+  --text_color2: #828282;
+  --white_color: #fff;
+}
+
+.container h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 75px;
+  color: var(--bg_color);
+  margin-top: 30px;
+}
+
+.container h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  color: var(--text_color);
+}
+
+.container h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: var(--text_color);
+}
+
+.container h6{
+  font-family: 'Manrope', sans-serif;
+}
+
+.container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text_color2);
+}
+
+.container a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container a.bg, button.bg{
+  background: var(--bg_color);
+  box-shadow: 0px 25px 46.8519px rgba(30, 20, 10, 0.1931);
+  border-radius: 5px;
+  padding: 18px 50px;
+  color: var(--white_color);
+  letter-spacing: 2px;
+  transition: all linear .2s;
+}
+
+.container a.bg:hover{
+  background: var(--bg_color3);
+}
+
+.container a.bg svg{
+  margin-left: 10px;
+  font-size: 28px;
+}
+
+.d_flex {
+  display: flex;
+  align-items: center;
+}
+
+.d_justify {
+  justify-content: space-between;
+}
+
+.section_gaps {
+  padding-top: 100px;
+}
+
+input, label, textarea{
+  font-size: 16px;
+}
+
+button{
+  border: none;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START Menubar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.Menubar{
+  height: 90px;
+  line-height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.MenubarImg{
+  text-align: center;
+}
+
+.Menubar .Menubar_overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START Banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.Banner{
+  margin-top: 80px;
+  padding: 80px;
+}
+
+.BannerContent h4 {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 40px;
+  background: var(--bg_color2);
+  color: var(--text_color);
+  border-radius: 76px;
+  padding: 10px 50px;
+}
+
+.BannerContent h2{
+  margin-top: 30px;
+}
+
+.BannerContent del{
+  font-size: 23px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.BannerContent .order{
+  margin-top: 30px;
+}
+
+.BannerContent .order h6{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--text_color);
+}
+
+.BannerContent .order p{
+  color: var(--text_color);
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.BannerContent .right{
+  margin-left: 30px;
+}
+
+.BannerImg{
+  position: relative;
+}
+
+.BannerImg img{
+  width: 100%;
+}
+
+.imgOverlay {
+  position: absolute;
+  bottom: 13%;
+  left: 26%;
+  background: #FFFFFF;
+  width: 150px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgOverlay .item{
+  text-align: center;
+}
+
+.imgOverlay .item h3{
+  color: var(--bg_color);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.imgOverlay .item p{
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+
+.butterfly{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START Product PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.Product{
+  position: relative;
+}
+
+.product_overlay{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translateY(-50%);
+}
+
+.ProductItem{
+  background: #FFFFFF;
+  box-shadow: 0px 20px 20px rgba(222, 222, 222, 0.05);
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  transition: all linear .4s;
+}
+
+.ProductItem:hover{
+  transform: translateY(-5px);
+}
+
+.ProductItem .text{
+  margin-top: 20px;
+}
+
+.ProductItem h6{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text_color);
+}
+
+.ProductItem p{
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START Video PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.Video{
+  position: relative;
+}
+
+.VideoOverlay{
+  position: absolute;
+  top:30px;
+  right:0;
+}
+
+.VideoContent{
+  text-align: center;
+}
+
+.VideoPart{
+  margin-top: 60px;
+}
+
+.VideoPart div {
+  width: 100% !important;
+  height: 450px !important;
+}
+
+.VideoPart div iframe{
+  border-radius: 10px;
+}
+
+.Video a{
+  margin-top: 50px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START Feature PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.FeatureContent{
+  position: relative;
+}
+
+.future_top {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+
+.future_middle{
+  position: absolute;
+  top: 50%;
+  right: -35px;
+  transform: translateY(-50%);
+}
+
+.FeatureContent{
+  background: #FCEEF1;
+  padding: 80px;
+  border-radius: 10px;
+}
+
+.FeatureContent .Header{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.FeatureItem{
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.FeatureItem .svg{
+  margin-bottom: 20px;
+}
+
+.FeatureItem .svg svg{
+  font-size: 50px;
+  color: #00B900;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START About PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.About{
+  background: var(--bg_color);
+  margin-top: 100px;
+  padding: 100px 0;
+  position: relative;
+}
+
+.About::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: url('../public/assets/images/about_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.About .AboutRight {
+  position: absolute;
+  top: -150px;
+  right: 0;
+}
+
+.About .AboutLeft {
+  position: absolute;
+  bottom: -150px;
+  left: 0;
+}
+
+.About .AboutContent{
+  text-align: center;
+  position: relative;
+  z-index: 9;
+}
+
+.About .AboutContent h2{
+  color: var(--white_color);
+}
+
+.About .AboutContent h3{
+  color: var(--white_color);
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START ClientReview PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.ClientReviewContent{
+  margin-top: 60px;
+}
+
+.ClientReviewItem{
+  background: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(194, 194, 194, 0.25);
+  border-radius: 1px 40px;
+  padding: 40px;
+  position: relative;
+  margin-bottom: 40px;
+  transition: all linear .5s;
+}
+
+.ClientReviewItem:hover{
+  transform: translateY(-5px);
+}
+
+.ClientReviewContent .row {
+  --bs-gutter-x: 40px;
+}
+
+.profileImage{
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.profileImage img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.profileImage .img{
+  margin-right: 20px;
+}
+
+.profileImage .text h6{
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.profileImage .text h6 span{
+  color: var(--bg_color);
+}
+
+.profileImage .text p{
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.ClientReviewItem .descriptions{
+  padding-bottom: 50px;
+}
+
+.ClientReviewItem .koma{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START FormPart PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.FormPart{
+  position: relative;
+}
+
+.FormPart .FormPartLeftOverlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.FormPart .FormPartRightOverlay{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.FormPartContent{
+  background: #FFF;
+  border-radius: 10px;
+  padding: 50px 30px;
+  margin-top: 60px;
+}
+
+.FormPartContent h6{
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.FormPartLeft{
+  margin-right: 15px;
+}
+
+.FormPartContent .CustomeInput{
+  margin-top: 30px;
+}
+
+.FormPartContent .CustomeInput input{
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid #DDD;
+}
+
+.Payment{
+  width: 50%;
+  background: #FFF;
+  box-shadow: 0px -68px 80px rgba(0, 0, 0, 0.03), 0px 35px 46.8519px rgba(0, 0, 0, 0.0227778), 0px -3px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.Payment .CustomeInput input{
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.Payment .CustomeInput{
+  margin-top: 20px;
+}
+
+.Payment .CustomeInput label{
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+
+/* Check Box */
+.Pay .checkbox {
+  position: relative;
+}
+.Pay .checkbox input, .Pay .checkbox svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+.Pay .checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  outline: none;
+  background: #FFF;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: box-shadow 0.3s;
+  border: 1px solid #DDD;
+}
+
+
+.Pay .checkbox svg {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--bg_color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  transform: scale(var(--scale, 1)) translateZ(0);
+}
+.Pay .checkbox.path input:checked {
+  --s: 2px;
+  transition-delay: 0.4s;
+}
+.Pay .checkbox.path input:checked + svg {
+  --a: 16.1 86.12;
+  --o: 102.22;
+}
+.Pay .checkbox.path svg {
+  stroke-dasharray: var(--a, 86.12);
+  stroke-dashoffset: var(--o, 86.12);
+  transition: stroke-dasharray 0.6s, stroke-dashoffset 0.6s;
+}
+
+
+.FormPartRight{
+  margin-left: 15px;
+}
+
+.FormPartRight ul{
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 1px solid #DDD;
+}
+
+.FormPartRight ul li{
+  padding: 15px 20px;
+  border-bottom: 1px solid #DDD;
+}
+
+.FormPartRight ul li:last-child{
+  border-bottom: none;
+}
+
+.FormPartRight ul li h4{
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: var(--text_color);
+}
+
+.FormPartRight ul li h5{
+  color: var(--text_color2);
+}
+
+.PaymentImg img{
+  height: 70px;
+}
+
+.PaymentImg p{
+  margin-left: 10px;
+}
+
+.PaymentImg .left{
+  width: 70%;
+}
+
+.PaymentImg .middle{
+  width: 10%;
+}
+
+.PaymentImg .middle span{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.PaymentImg .price{
+  width: 20%;
+  text-align: right;
+}
+
+.PaymentImg .price h3{
+  font-weight: 700;
+}
+
+.FormPartRight ul li.subtotal h4{
+  font-size: 20px;
+  color: var(--text_color2);
+}
+
+.FormPartRight ul li.subtotal label{
+  margin-left: 10px;
+}
+
+.FormPartRight ul li.subtotal .CustomeInput{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.FormPartRight ul li.subtotal .CustomeInput:last-child{
+  margin-bottom: 0;
+}
+
+.FormPartRight p{
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 300;
+  line-height: 30px;
+  color: var(--text_color);
+  font-family: 'Manrope', sans-serif;
+}
+
+.FormPartRight p a{
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--bg_color);
+  font-family: 'Manrope', sans-serif;
+}
+
+.FormPartRight .bg{
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+  margin-top: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+.FormPartRight .bg svg{
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.FormPartRight .bg:hover{
+  background: var(--bg_color3);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START Delivary PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.DelivaryContent{
+  padding: 30px;
+  border-radius: 10px;
+  border:1px solid #ccc;	
+}
+
+.DelivaryItem .svg{
+  margin-right: 20px;
+}
+
+.DelivaryItem svg{
+  font-size: 50px;
+  color: var(--bg_color);
+}
+
+.DelivaryItem h6{
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.DelivaryItem p{
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+}
+
+.footer_logo{
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
+  background: #E5E5E5;
+}
+
+.footer_logo::after{
+  position: absolute;
+  content: '';
+  top: 50%;
+  left:0;
+  transform: translateY(-50%);
+  width: 38%;
+  height: 2px;
+  background: #ccc;
+}
+
+.footer_logo::before{
+  position: absolute;
+  content: '';
+  top: 50%;
+  right:0;
+  transform: translateY(-50%);
+  width: 38%;
+  height: 2px;
+  background: #ccc;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START Footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.FooterItem .icon{
+  justify-content: center;
+}
+
+.FooterItem svg{
+  font-size: 50px;
+  margin: 0 20px;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
