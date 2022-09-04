@@ -1,0 +1,265 @@
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1440px) {
+    
+
+
+}
+
+
+/* // XX-Large devices (larger desktops, 1024px and up) */
+@media (max-width: 1024px) {
+    
+
+
+}
+@media (min-width: 768px)  and (max-width :991px){
+    #banner{
+        background-image: url(../images/banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 30px 0;
+        background-size: contain;
+        text-align: center;
+    } 
+    #banner .text {
+        margin: 20px 0;
+        text-align: center;
+    }
+    #banner .text h3 span {
+        color: #FEC827;
+    }
+    #banner .text h3 {
+        font-weight: 400;
+    font-size: 20px;
+    line-height: 74px;
+    text-align: center;
+    
+    /* Honey primary */
+    
+    color: white;
+    }
+    #banner .text h5 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 32px;
+       
+        text-decoration-line: line-through;
+        color: #A8DE63;
+        text-align: center;
+    } 
+    #banner .text h4{
+        font-style: normal;
+    font-weight: 400;
+    font-size: 40.99px;
+    line-height: 90%;
+    
+    
+    color: #F22512;
+}
+
+
+
+
+    /* order item  PART */
+   
+
+    
+    #order_item_click .text .bg button{
+        background: #FEC827;
+        box-shadow: 76px 25px 46.8519px rgb(30 20 10 / 19%);
+        border-radius: 14px;
+        padding: 16px 2px;
+    }
+
+    #order_item_click .text{
+        text-align: center;
+        padding: 10px 40px;
+       
+    }
+    
+    #order_item_click .text h4 {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 42px;
+        text-align: center;
+        color: #042117;
+        margin-top: 45px;
+    }
+   
+    /* order banner  */
+    #order_banner .order_banner_content {
+        background-image:url(../images/order_banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        padding: 35px 10px;
+        text-align: center;
+    }
+    #order_banner .order_banner_content h4{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 33px;
+        text-align: center;
+        color: #F22512;
+    }
+    #order_banner .order_banner_content h3{
+        font-family: 'Manrope';
+        font-weight: 800;
+        font-size: 31px;
+        line-height: 70px;
+        color: #042117;
+        margin-top: 4px;
+    }
+
+    /* comitment in customer  */
+    #comitment_part{
+        background-image: url(../images/icon/Group\ 1000000850\ \(2\).png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       padding:  70px 100px;
+    }
+    #comitment_part .text h3{
+        font-family: 'Li Bijoy Irsha Unicode';
+    
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 69px;
+    text-align: center;
+    color: #042117;
+    }
+    #comitment_part .text p{
+        font-family: 'Li Ador Noirrit';
+    
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #5B5858;
+    }    
+
+
+}
+
+/* // XX-Large devices (larger desktops, 1024px and up) */
+@media (max-width: 767px) {
+    #banner{
+        background-image: url(../images/banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 30px 0;
+        background-size: cover;
+        text-align: center;
+    } 
+    #banner .text {
+        margin: 20px 0;
+        text-align: center;
+    }
+    #banner .text h3 span {
+        color: #FEC827;
+    }
+    #banner .text h3 {
+        font-weight: 400;
+    font-size: 20px;
+    line-height: 74px;
+    text-align: center;
+    
+    /* Honey primary */
+    
+    color: white;
+    }
+    #banner .text h5 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 32px;
+       
+        text-decoration-line: line-through;
+        color: #A8DE63;
+        text-align: center;
+    } 
+    #banner .text h4{
+        font-style: normal;
+    font-weight: 400;
+    font-size: 40.99px;
+    line-height: 90%;
+    
+    
+    color: #F22512;
+}
+
+
+
+
+    #order_banner .order_banner_content {
+        background-image:url(../images/order_banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        padding: 10px 5px;
+        text-align: center;
+    }
+    #order_banner .order_banner_content h4{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 33px;
+        text-align:center;
+        color: #F22512;
+    }
+    #order_banner .order_banner_content h3{
+        font-family: 'Manrope';
+        font-weight: 800;
+        font-size: 19px;
+        line-height: 70px;
+        color: #042117;
+        margin-top: -31px;
+    }
+    #order_item_click .text .bg button{
+        background: #FEC827;
+        box-shadow: 76px 25px 46.8519px rgb(30 20 10 / 19%);
+        border-radius: 14px;
+       
+        padding: 16px 10px;
+    }
+    #order_item_click .text{
+        text-align: center;
+        padding: 10px 40px;
+       
+    }
+    
+    #order_item_click .text h4 {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 42px;
+        text-align: center;
+        color: #042117;
+        margin-top: 45px;
+    }
+
+        /* comitment in customer  */
+        #comitment_part{
+            background-image: url(../images/icon/Group\ 1000000850\ \(2\).png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           padding:  48px 2px;
+        }
+        #comitment_part .text h3{
+            font-family: 'Li Bijoy Irsha Unicode';
+        
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 69px;
+        text-align: center;
+        color: #042117;
+        }
+        #comitment_part .text p{
+            font-family: 'Li Ador Noirrit';
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 51px;
+            text-align: center;
+            color: #5B5858;
+        }    
+    
+
+}
